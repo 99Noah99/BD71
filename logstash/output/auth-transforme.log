@@ -1,60 +1,72 @@
 {
+          [0;33m"date"[0m[0;37m => [0m2025-04-03T18:01:16.000Z,
+       [0;33m"machine"[0m[0;37m => [0m[0;33m"valentin-test"[0m,
+           [0;33m"pid"[0m[0;37m => [0m[1;34m13824[0m,
+      [0;33m"@version"[0m[0;37m => [0m[0;33m"1"[0m,
        [0;33m"message"[0m[0;37m => [0m[0;33m"Apr 3 18:01:16 valentin-test sshd[13824]: Accepted publickey for ubuntu from 172.16.180.99 port 53332 ssh2: RSA ...\r"[0m,
-          [0;33m"tags"[0m[0;37m => [0m[
-        [1;37m[0] [0m[0;33m"_grokparsefailure"[0m
-    ],
-    [0;33m"@timestamp"[0m[0;37m => [0m2025-03-14T15:25:49.311864377Z,
-          [0;33m"host"[0m[0;37m => [0m[0;33m"7be9332208f3"[0m,
+     [0;33m"programme"[0m[0;37m => [0m[0;33m"sshd"[0m,
+       [0;33m"contenu"[0m[0;37m => [0m[0;33m"Accepted publickey for ubuntu from 172.16.180.99 port 53332 ssh2: RSA ...\r"[0m,
+          [0;33m"host"[0m[0;37m => [0m[0;33m"401ca1a41a18"[0m,
           [0;33m"path"[0m[0;37m => [0m[0;33m"/usr/share/logstash/input/auth.log"[0m,
-      [0;33m"@version"[0m[0;37m => [0m[0;33m"1"[0m
+    [0;33m"@timestamp"[0m[0;37m => [0m2025-03-14T21:32:07.041166675Z
 }
 {
+          [0;33m"date"[0m[0;37m => [0m2025-04-23T18:01:16.000Z,
+       [0;33m"machine"[0m[0;37m => [0m[0;33m"valentin-test"[0m,
+           [0;33m"pid"[0m[0;37m => [0m[1;34m13824[0m,
+      [0;33m"@version"[0m[0;37m => [0m[0;33m"1"[0m,
        [0;33m"message"[0m[0;37m => [0m[0;33m"Apr 23 18:01:16 valentin-test sshd[13824]: pam_unix(sshd:session): session opened for user ubuntu by (uid=0)\r"[0m,
-          [0;33m"tags"[0m[0;37m => [0m[
-        [1;37m[0] [0m[0;33m"_grokparsefailure"[0m
-    ],
-    [0;33m"@timestamp"[0m[0;37m => [0m2025-03-14T15:25:49.318165954Z,
-          [0;33m"host"[0m[0;37m => [0m[0;33m"7be9332208f3"[0m,
+     [0;33m"programme"[0m[0;37m => [0m[0;33m"sshd"[0m,
+       [0;33m"contenu"[0m[0;37m => [0m[0;33m"pam_unix(sshd:session): session opened for user ubuntu by (uid=0)\r"[0m,
+          [0;33m"host"[0m[0;37m => [0m[0;33m"401ca1a41a18"[0m,
           [0;33m"path"[0m[0;37m => [0m[0;33m"/usr/share/logstash/input/auth.log"[0m,
-      [0;33m"@version"[0m[0;37m => [0m[0;33m"1"[0m
+    [0;33m"@timestamp"[0m[0;37m => [0m2025-03-14T21:32:07.048769558Z
 }
 {
+          [0;33m"date"[0m[0;37m => [0m2025-04-23T18:02:25.000Z,
+       [0;33m"machine"[0m[0;37m => [0m[0;33m"valentin-test"[0m,
+           [0;33m"pid"[0m[0;37m => [0m[1;34m14053[0m,
+      [0;33m"@version"[0m[0;37m => [0m[0;33m"1"[0m,
        [0;33m"message"[0m[0;37m => [0m[0;33m"Apr 23 18:02:25 valentin-test su[14053]: Successful su for root by root\r"[0m,
-          [0;33m"tags"[0m[0;37m => [0m[
-        [1;37m[0] [0m[0;33m"_grokparsefailure"[0m
-    ],
-    [0;33m"@timestamp"[0m[0;37m => [0m2025-03-14T15:25:49.318901246Z,
-          [0;33m"host"[0m[0;37m => [0m[0;33m"7be9332208f3"[0m,
+     [0;33m"programme"[0m[0;37m => [0m[0;33m"su"[0m,
+       [0;33m"contenu"[0m[0;37m => [0m[0;33m"Successful su for root by root\r"[0m,
+          [0;33m"host"[0m[0;37m => [0m[0;33m"401ca1a41a18"[0m,
           [0;33m"path"[0m[0;37m => [0m[0;33m"/usr/share/logstash/input/auth.log"[0m,
-      [0;33m"@version"[0m[0;37m => [0m[0;33m"1"[0m
+    [0;33m"@timestamp"[0m[0;37m => [0m2025-03-14T21:32:07.049552721Z
 }
 {
+          [0;33m"date"[0m[0;37m => [0m2025-04-23T18:02:25.000Z,
+       [0;33m"machine"[0m[0;37m => [0m[0;33m"valentin-test"[0m,
+           [0;33m"pid"[0m[0;37m => [0m[1;34m14053[0m,
+      [0;33m"@version"[0m[0;37m => [0m[0;33m"1"[0m,
        [0;33m"message"[0m[0;37m => [0m[0;33m"Apr 23 18:02:25 valentin-test su[14053]: + /dev/pts/0 root:root\r"[0m,
-          [0;33m"tags"[0m[0;37m => [0m[
-        [1;37m[0] [0m[0;33m"_grokparsefailure"[0m
-    ],
-    [0;33m"@timestamp"[0m[0;37m => [0m2025-03-14T15:25:49.319369521Z,
-          [0;33m"host"[0m[0;37m => [0m[0;33m"7be9332208f3"[0m,
+     [0;33m"programme"[0m[0;37m => [0m[0;33m"su"[0m,
+       [0;33m"contenu"[0m[0;37m => [0m[0;33m"+ /dev/pts/0 root:root\r"[0m,
+          [0;33m"host"[0m[0;37m => [0m[0;33m"401ca1a41a18"[0m,
           [0;33m"path"[0m[0;37m => [0m[0;33m"/usr/share/logstash/input/auth.log"[0m,
-      [0;33m"@version"[0m[0;37m => [0m[0;33m"1"[0m
+    [0;33m"@timestamp"[0m[0;37m => [0m2025-03-14T21:32:07.050081177Z
 }
 {
+          [0;33m"date"[0m[0;37m => [0m2025-04-23T18:02:25.000Z,
+       [0;33m"machine"[0m[0;37m => [0m[0;33m"valentin-test"[0m,
+           [0;33m"pid"[0m[0;37m => [0m[1;34m14053[0m,
+      [0;33m"@version"[0m[0;37m => [0m[0;33m"1"[0m,
        [0;33m"message"[0m[0;37m => [0m[0;33m"Apr 23 18:02:25 valentin-test su[14053]: pam_unix(su:session): session opened for user root by ubuntu(uid=0)\r"[0m,
-          [0;33m"tags"[0m[0;37m => [0m[
-        [1;37m[0] [0m[0;33m"_grokparsefailure"[0m
-    ],
-    [0;33m"@timestamp"[0m[0;37m => [0m2025-03-14T15:25:49.319931722Z,
-          [0;33m"host"[0m[0;37m => [0m[0;33m"7be9332208f3"[0m,
+     [0;33m"programme"[0m[0;37m => [0m[0;33m"su"[0m,
+       [0;33m"contenu"[0m[0;37m => [0m[0;33m"pam_unix(su:session): session opened for user root by ubuntu(uid=0)\r"[0m,
+          [0;33m"host"[0m[0;37m => [0m[0;33m"401ca1a41a18"[0m,
           [0;33m"path"[0m[0;37m => [0m[0;33m"/usr/share/logstash/input/auth.log"[0m,
-      [0;33m"@version"[0m[0;37m => [0m[0;33m"1"[0m
+    [0;33m"@timestamp"[0m[0;37m => [0m2025-03-14T21:32:07.050569914Z
 }
 {
+          [0;33m"date"[0m[0;37m => [0m2025-04-23T18:02:25.000Z,
+       [0;33m"machine"[0m[0;37m => [0m[0;33m"valentin-test"[0m,
+           [0;33m"pid"[0m[0;37m => [0m[1;34m14053[0m,
+      [0;33m"@version"[0m[0;37m => [0m[0;33m"1"[0m,
        [0;33m"message"[0m[0;37m => [0m[0;33m"Apr 23 18:02:25 valentin-test su[14053]: pam_systemd(su:session): Cannot create session: Already running in a session\r"[0m,
-          [0;33m"tags"[0m[0;37m => [0m[
-        [1;37m[0] [0m[0;33m"_grokparsefailure"[0m
-    ],
-    [0;33m"@timestamp"[0m[0;37m => [0m2025-03-14T15:25:49.320442815Z,
-          [0;33m"host"[0m[0;37m => [0m[0;33m"7be9332208f3"[0m,
+     [0;33m"programme"[0m[0;37m => [0m[0;33m"su"[0m,
+       [0;33m"contenu"[0m[0;37m => [0m[0;33m"pam_systemd(su:session): Cannot create session: Already running in a session\r"[0m,
+          [0;33m"host"[0m[0;37m => [0m[0;33m"401ca1a41a18"[0m,
           [0;33m"path"[0m[0;37m => [0m[0;33m"/usr/share/logstash/input/auth.log"[0m,
-      [0;33m"@version"[0m[0;37m => [0m[0;33m"1"[0m
+    [0;33m"@timestamp"[0m[0;37m => [0m2025-03-14T21:32:07.051031866Z
 }
