@@ -1,0 +1,25 @@
+services:
+  logstash:
+    image: docker.elastic.co/logstash/logstash:8.13.4
+    container_name: logstash
+    restart: unless-stopped
+    volumes:
+      - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml  # Mount only logstash.yml
+      - ./logstash/conf:/usr/share/logstash/conf
+      - ./logstash/input:/usr/share/logstash/input    # Optional input folder
+      - ./logstash/output:/usr/share/logstash/output  # Optional output folder
+    environment:
+      - "LS_JAVA_OPTS=-Xms512m -Xmx512m"
+    # entrypoint: ["/bin/bash", "-c", "logstash -f /usr/share/logstash/conf/my-first-test"]
+    entrypoint: ["/bin/sh", "-c", "tail -f /dev/null"]
+    ports:
+      - "5044:5044"  # Beats input
+      - "9600:9600"  # Monitoring API
+      - "5000:5000/tcp"  # TCP input
+      - "5000:5000/udp"  # UDP input
+    networks:
+      - elk
+
+networks:
+  elk:
+    driver: bridge

@@ -1,0 +1,19 @@
+http.host: "0.0.0.0"
+xpack.monitoring.elasticsearch.hosts: [ "http://elasticsearch:9200" ]
+# Path to the data directory where Logstash stores its internal state
+path.data: "./data"
+
+# Ensures that events are processed in order
+pipeline.ordered: true
+
+# Disables compatibility with Elastic Common Schema (ECS)
+pipeline.ecs_compatibility: disabled
+
+# Sets log level to "info" (can be debug, warn, error)
+log.level: info
+
+# Number of workers (threads) that Logstash will use for processing events
+pipeline.workers: 1
+
+# Path where Logstash will write logs
+path.logs: "./logs"
