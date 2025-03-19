@@ -1,0 +1,48 @@
+version: "3.8"
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.13.4
+    container_name: es
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=true
+      - xpack.security.enrollment.enabled=true
+      - bootstrap.memory_lock=true
+      # Limiter la mémoire (optionnel, ajustez selon vos besoins)
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - esdata:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "curl",
+          "-f",
+          "https://localhost:9200",
+          "--cacert",
+          "/usr/share/elasticsearch/config/certs/http_ca.crt",
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.13.4
+    container_name: kb
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    ports:
+      - "5601:5601"
+    # Pas de config ELASTICSEARCH_USERNAME/PASSWORD pour laisser Kibana
+    # démarrer en mode "enrollment" (enrôlement).
+
+volumes:
+  esdata:
